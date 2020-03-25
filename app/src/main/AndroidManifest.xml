@@ -11,7 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Ui.ResultActivity"></activity>
+        <activity android:name=".Ui.ResultActivity">
+
+        </activity>
         <activity android:name=".Ui.QuestionActivity" />
         <activity android:name=".Ui.PlayGame" />
         <activity android:name=".Ui.Sign_Up" />
