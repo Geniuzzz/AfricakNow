@@ -3,6 +3,7 @@ package com.tinuade.africaknow;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 
 import com.tinuade.africaknow.Model.Answer;
@@ -34,12 +35,8 @@ public class QuizAdapter extends RecyclerView.Adapter<QuizAdapter.QuizViewHolder
 
     @Override
     public void onBindViewHolder(@NonNull QuizViewHolder holder, int position) {
-        holder.question.setText(mQuestionList.get(position).getQuestion());
-        List<Answer> answers = mQuestionList.get(position).getAnswers();
-        holder.option1.setText(answers.get(0).getOption());
-        holder.option2.setText(answers.get(1).getOption());
-        holder.option3.setText(answers.get(2).getOption());
-        holder.option4.setText(answers.get(3).getOption());
+
+
     }
 
     @Override
@@ -47,51 +44,17 @@ public class QuizAdapter extends RecyclerView.Adapter<QuizAdapter.QuizViewHolder
         return mQuestionList.size();
     }
 
-    static class QuizViewHolder extends RecyclerView.ViewHolder {
-        TextView question, option1, option2, option3, option4;
+    class QuizViewHolder extends RecyclerView.ViewHolder {
+        TextView question;
+        RadioGroup radioGroup;
 
         QuizViewHolder(@NonNull View itemView) {
             super(itemView);
-
-            question = itemView.findViewById(R.id.question_textView);
-            option1 = itemView.findViewById(R.id.option_1_textView);
-            option2 = itemView.findViewById(R.id.option_2_textView);
-            option3 = itemView.findViewById(R.id.option_3_textView);
-            option4 = itemView.findViewById(R.id.option_4_textView);
-
-            option1.setOnClickListener(view -> {
-                if (!option1.isSelected()) {
-                    option1.setSelected(true);
-                    option2.setSelected(false);
-                    option3.setSelected(false);
-                    option4.setSelected(false);
-                }
-            });
-            option2.setOnClickListener(view -> {
-                if (!option2.isSelected()) {
-                    option2.setSelected(true);
-                    option1.setSelected(false);
-                    option3.setSelected(false);
-                    option4.setSelected(false);
-                }
-            });
-            option3.setOnClickListener(view -> {
-                if (!option3.isSelected()) {
-                    option3.setSelected(true);
-                    option1.setSelected(false);
-                    option2.setSelected(false);
-                    option4.setSelected(false);
-
-                }
-            });
-            option4.setOnClickListener(view -> {
-                if (!option4.isSelected()) {
-                    option4.setSelected(true);
-                    option1.setSelected(false);
-                    option2.setSelected(false);
-                    option3.setSelected(false);
-                }
-            });
         }
+
+        void bind(List<Answer> answers ){
+
+        }
+
     }
 }

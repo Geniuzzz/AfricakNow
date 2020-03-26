@@ -25,9 +25,9 @@
             tools:text="Who is the president of Nigeria" />
     </androidx.cardview.widget.CardView>
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/option_1_cardView"
-        android:layout_width="0dp"
+    <RadioGroup
+        android:id="@+id/answer_radio_group"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="32dp"
@@ -36,75 +36,88 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/question_cardView">
 
-        <TextView
-            android:id="@+id/option_1_textView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/option_background"
-            android:padding="16dp"
-            tools:text="Julius Berger" />
-    </androidx.cardview.widget.CardView>
+        </RadioGroup>
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/option_2_cardView"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:background="@drawable/option_background"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/option_1_cardView">
+    <!--    <androidx.cardview.widget.CardView-->
+<!--        android:id="@+id/option_1_cardView"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="8dp"-->
+<!--        android:layout_marginTop="32dp"-->
+<!--        android:layout_marginEnd="8dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/question_cardView">-->
 
-        <TextView
-            android:id="@+id/option_2_textView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/option_background"
-            android:padding="16dp"
-            tools:text="Julius Berger" />
-    </androidx.cardview.widget.CardView>
+<!--        <TextView-->
+<!--            android:id="@+id/option_1_textView"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/option_background"-->
+<!--            android:padding="16dp"-->
+<!--            tools:text="Julius Berger" />-->
+<!--    </androidx.cardview.widget.CardView>-->
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/option_3_cardView"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:background="@drawable/option_background"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/option_2_cardView">
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:id="@+id/option_2_cardView"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="8dp"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:layout_marginEnd="8dp"-->
+<!--        android:background="@drawable/option_background"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/option_1_cardView">-->
 
-        <TextView
-            android:id="@+id/option_3_textView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/option_background"
-            android:padding="16dp"
-            tools:text="Julius Berger" />
-    </androidx.cardview.widget.CardView>
+<!--        <TextView-->
+<!--            android:id="@+id/option_2_textView"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/option_background"-->
+<!--            android:padding="16dp"-->
+<!--            tools:text="Julius Berger" />-->
+<!--    </androidx.cardview.widget.CardView>-->
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/option_4_cardView"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:background="@drawable/option_background"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/option_3_cardView">
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:id="@+id/option_3_cardView"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="8dp"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:layout_marginEnd="8dp"-->
+<!--        android:background="@drawable/option_background"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/option_2_cardView">-->
 
-        <TextView
-            android:id="@+id/option_4_textView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/option_background"
-            android:padding="16dp"
-            tools:text="Julius Berger" />
-    </androidx.cardview.widget.CardView>
+<!--        <TextView-->
+<!--            android:id="@+id/option_3_textView"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/option_background"-->
+<!--            android:padding="16dp"-->
+<!--            tools:text="Julius Berger" />-->
+<!--    </androidx.cardview.widget.CardView>-->
+
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:id="@+id/option_4_cardView"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="8dp"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:layout_marginEnd="8dp"-->
+<!--        android:background="@drawable/option_background"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/option_3_cardView">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/option_4_textView"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/option_background"-->
+<!--            android:padding="16dp"-->
+<!--            tools:text="Julius Berger" />-->
+<!--    </androidx.cardview.widget.CardView>-->
 </androidx.constraintlayout.widget.ConstraintLayout>

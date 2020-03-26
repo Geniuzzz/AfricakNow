@@ -13,16 +13,22 @@
         android:theme="@style/AppTheme">
         <activity android:name=".Ui.ResultActivity"></activity>
         <activity android:name=".Ui.QuestionActivity" />
-        <activity android:name=".Ui.PlayGame" />
-        <activity android:name=".Ui.Sign_Up" />
-        <activity
-            android:name=".SplashScreen"
-            android:theme="@style/SplashScreenTheme">
+        <activity android:name=".Ui.PlayGame" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".Ui.Sign_Up" />
+        <activity
+            android:name=".SplashScreen"
+            android:theme="@style/SplashScreenTheme">
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
         </activity>
         <activity android:name=".Ui.Sign_In" />
     </application>
